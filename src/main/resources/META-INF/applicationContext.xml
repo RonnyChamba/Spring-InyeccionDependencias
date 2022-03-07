@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- Beans Tinta -->
+	<bean id="tinta" class="com.curso.spring.TintaNegra"></bean>
+	<bean id="miTintaAzul" class="com.curso.spring.TintaAzul"></bean>	
+	<bean id="miTintaRoja" class="com.curso.spring.TintaRoja"></bean>
+	
+		
+	<!-- Bean Esfero -->
+	<bean id ="miEsfero" class="com.curso.spring.Esfero" autowire="constructor">
+		
+		<!-- Inyeccion por constructor -->
+		<!-- <constructor-arg ref="miTinta"></constructor-arg> -->
+		
+		<!-- Inyeccion por método setter -->
+		<!-- <property name="tinta" ref="miTinta"></property> -->
+		
+	</bean>
+
+</beans>
